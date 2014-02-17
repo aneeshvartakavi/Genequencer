@@ -44,24 +44,29 @@ public class DecodeSequencer extends MaxObject{
 	
 	public void list(Atom[] args)
 	{
-		if(args.length==3)
-		{
-			userID = args[0].getInt();
+		
+		//if(args.length==3)
+		//{
 			
-			quantizationState = args[1].getInt();
+		userID = args[0].getInt();
 			
-			String seqState = args[2].getString();
+		quantizationState = args[1].getInt();
 			
-			String[] items = seqState.replaceAll("\\[", "").replaceAll("\\]", "").replaceAll(" ","").replaceAll("\\,",",").split(",");
-			System.out.println(seqState);
+		//String seqState = args.getString();
+			
+		//String[] items = seqState.replaceAll("\\[", "").replaceAll("\\]", "").replaceAll(" ","").replaceAll("\\\\",",").split(",");
+		//System.out.println(seqState);
 	
-			for (int i = 0; i < items.length; i++) 
-			{
-				sequencerState[i] = (int) Long.parseLong(items[i]);
-			}
+		for (int i = 0; i < 24; i++) 
+		{
 			
-			sendToOutput();
+			String tempString = args[i+2].getString();
+			tempString = tempString.replaceAll("\\[", "").replaceAll("\\]", "").replaceAll(",","").replaceAll("\\\\","");
+			sequencerState[i] = Integer.parseInt(tempString);
 		}
+			
+		sendToOutput();
+		//}
 		    
 	}
 	

@@ -19,13 +19,13 @@ public class Route extends MaxObject{
 	
 	public void list(Atom[] args)
 	{
-		if(args.length==3)
+		// Word of caution, do not send an unintended message in, there is no guard against that.	
+		if(args.length>0)
 		{
 			int userID = args[0].getInt();
-			System.out.println(userID);
 			outlet(userID,args);
 		}
-		    
+				    
 	}
 
 }
