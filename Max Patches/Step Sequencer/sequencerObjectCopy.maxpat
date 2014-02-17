@@ -131,7 +131,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 291.0, 194.199997, 128.0, 20.0 ],
-					"text" : "metro 1000 @active 1"
+					"text" : "metro 2500 @active 1"
 				}
 
 			}
