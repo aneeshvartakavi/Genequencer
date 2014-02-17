@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 8.0, 50.0, 1920.0, 952.0 ],
+		"rect" : [ 0.0, 50.0, 1920.0, 952.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -71,17 +71,6 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
-					"id" : "obj-16",
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 805.0, 854.0, 25.0, 25.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
@@ -90,7 +79,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1066.0, 234.200012, 95.0, 62.0 ],
+					"patching_rect" : [ 1066.0, 234.200012, 95.0, 60.0 ],
 					"text" : "Decode outlets:\n1) user iD\n2) quantization\n3) data\n"
 				}
 
@@ -105,7 +94,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1123.0, 783.400024, 91.0, 75.0 ],
+					"patching_rect" : [ 1123.0, 783.400024, 91.0, 74.0 ],
 					"text" : "Encode inlets:\n1) get data\n2) user ID\n3) quantization\n4) data\n"
 				}
 
@@ -120,7 +109,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 873.0, 876.0, 276.0, 32.0 ],
+					"patching_rect" : [ 873.0, 876.0, 276.0, 31.0 ],
 					"text" : "9 2 \"[0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0]\""
 				}
 
@@ -274,10 +263,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 288.0, 713.76001, 46.0, 34.0 ],
+					"patching_rect" : [ 288.0, 713.76001, 46.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 169.899994, 19.599998, 46.0, 34.0 ],
+					"presentation_rect" : [ 169.899994, 19.599998, 46.0, 33.0 ],
 					"text" : "Get\nData:"
 				}
 
@@ -1154,15 +1143,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-3", 0 ]
 				}
 
 			}
