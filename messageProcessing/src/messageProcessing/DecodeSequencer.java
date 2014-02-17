@@ -52,7 +52,8 @@ public class DecodeSequencer extends MaxObject{
 			
 			String seqState = args[2].getString();
 			
-			String[] items = seqState.replaceAll("\\[", "").replaceAll("\\]", "").replaceAll(" ","").split(",");
+			String[] items = seqState.replaceAll("\\[", "").replaceAll("\\]", "").replaceAll(" ","").replaceAll("\\,",",").split(",");
+			System.out.println(seqState);
 	
 			for (int i = 0; i < items.length; i++) 
 			{

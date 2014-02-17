@@ -22,7 +22,7 @@ public class Route extends MaxObject{
 		if(args.length==3)
 		{
 			int userID = args[0].getInt();
-		
+			System.out.println(userID);
 			outlet(userID,args);
 		}
 		    
