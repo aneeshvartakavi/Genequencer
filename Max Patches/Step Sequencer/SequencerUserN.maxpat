@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 3,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 70.0, 51.0, 1882.0, 928.0 ],
+		"rect" : [ 30.0, 51.0, 1882.0, 928.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -31,57 +31,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-38",
-					"linecount" : 9,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1079.0, 504.0, 50.0, 125.0 ],
-					"text" : "0 1 \"[1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-29",
+					"id" : "obj-37",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1296.146606, 437.0, 88.0, 20.0 ],
-					"text" : "receive userID"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-28",
-					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1185.47998, 472.839996, 185.0, 20.0 ],
-					"text" : "mxj messageProcessing.Encode"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-27",
-					"linecount" : 9,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 639.0, 449.0, 50.0, 125.0 ],
-					"text" : "0 1 \"[1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\""
+					"patching_rect" : [ 1082.75708, 490.258972, 98.0, 20.0 ],
+					"text" : "mxj net.maxhole"
 				}
 
 			}
@@ -109,7 +65,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1093.0, 976.170044, 413.0, 18.0 ],
-					"text" : "0 1 \"[1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\""
+					"text" : "0 1 \"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\""
 				}
 
 			}
@@ -285,8 +241,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "sequencerViewerObjectCopy.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "bang", "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 1505.0, 327.723022, 245.0, 96.299988 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1506.0, 242.0, 245.0, 96.299988 ]
@@ -300,8 +256,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "sequencerViewerObjectCopy.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "bang", "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 1251.0, 327.723022, 245.0, 96.299988 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1252.0, 242.0, 245.0, 96.299988 ]
@@ -315,8 +271,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "sequencerViewerObjectCopy.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "bang", "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 1000.0, 327.723022, 245.0, 96.299988 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1001.0, 242.0, 245.0, 96.299988 ]
@@ -330,8 +286,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "sequencerViewerObjectCopy.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "bang", "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 748.0, 327.723022, 245.0, 96.299988 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 749.0, 242.0, 245.0, 96.299988 ]
@@ -345,8 +301,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "sequencerViewerObjectCopy.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "bang", "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 1505.0, 208.850006, 245.0, 96.299988 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1506.0, 123.126984, 245.0, 96.299988 ]
@@ -360,8 +316,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "sequencerViewerObjectCopy.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "bang", "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 1251.0, 208.850006, 245.0, 96.299988 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1252.0, 123.126984, 245.0, 96.299988 ]
@@ -375,8 +331,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "sequencerViewerObjectCopy.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "bang", "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 1000.0, 208.850006, 245.0, 96.299988 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1001.0, 123.126984, 245.0, 96.299988 ]
@@ -390,8 +346,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "sequencerViewerObjectCopy.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "bang", "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 748.0, 208.850006, 245.0, 96.299988 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 749.0, 123.126984, 245.0, 96.299988 ]
@@ -423,7 +379,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 243.019989, 146.72699, 100.0, 33.0 ],
+					"patching_rect" : [ 243.019989, 146.72699, 100.0, 34.0 ],
 					"varname" : "umenu"
 				}
 
@@ -437,7 +393,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 243.019989, 114.0, 103.0, 33.0 ],
+					"patching_rect" : [ 243.019989, 114.0, 103.0, 34.0 ],
 					"text" : "User ID"
 				}
 
@@ -513,7 +469,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.538021, 30.719997, 158.0, 74.0 ],
+					"patching_rect" : [ 33.538021, 30.719997, 158.0, 75.0 ],
 					"text" : "Inlets:\n1. Send Serial Data (Bang)\n2. Serial Data Input\nOutlets:\n1. Serial Data Output"
 				}
 
@@ -528,7 +484,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.538021, 285.627014, 158.0, 114.0 ],
+					"patching_rect" : [ 33.538021, 285.627014, 158.0, 117.0 ],
 					"text" : "Inlets:\n1. Trigger Bang\n2. Note Number\n3. Duration (ms)\n4. MIDI Program Num\n5. Volume (0-127)\nOutlets:\n1. Synthesized  Audio"
 				}
 
@@ -543,7 +499,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.538021, 123.126984, 158.0, 154.0 ],
+					"patching_rect" : [ 33.538021, 123.126984, 158.0, 158.0 ],
 					"text" : "Inlets:\n1. Start/Stop (1/0)\n2. Tempo (Int)\n3. Send Serial Data (Bang)\n4. Serial Data Input\n5. User ID\nOutlets:\n1. Row 1 Bang\n2. Row 2 Bang\n3. Row 3 Bang\n4. Serial Data Output"
 				}
 
@@ -916,33 +872,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -974,6 +903,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -1078,15 +1016,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-55", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1177,25 +1106,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-65", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-65", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
+					"destination" : [ "obj-37", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-65", 0 ]
@@ -1204,25 +1115,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-66", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-66", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
+					"destination" : [ "obj-37", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-66", 0 ]
@@ -1231,7 +1124,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
+					"destination" : [ "obj-37", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-67", 0 ]
@@ -1240,7 +1133,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
+					"destination" : [ "obj-37", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-68", 0 ]
@@ -1249,25 +1142,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-69", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-69", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
+					"destination" : [ "obj-37", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-69", 0 ]
@@ -1276,16 +1151,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-70", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
+					"destination" : [ "obj-37", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-70", 0 ]
@@ -1294,7 +1160,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
+					"destination" : [ "obj-37", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-71", 0 ]
@@ -1303,7 +1169,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
+					"destination" : [ "obj-37", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-72", 0 ]
@@ -1349,35 +1215,35 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "vstSynthGUI.maxpat",
-				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "keyInputObject.maxpat",
-				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "soundChangeObject.maxpat",
-				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sequencerViewerObjectCopy.maxpat",
-				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sequencerObjectCopy.maxpat",
-				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

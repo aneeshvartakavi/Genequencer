@@ -36,14 +36,14 @@ public class Filter extends MaxObject{
 			bail("Filter UserID not set!");
 		}
 		
-		if(args.length==3)
-		{
+		//if(args.length==3)
+		//{
 			int tempID = args[0].getInt();
 		
 			if(userID == tempID)
 			{
 				outlet(0,args);
-			}
+//			}
 			
 		}
 		    
