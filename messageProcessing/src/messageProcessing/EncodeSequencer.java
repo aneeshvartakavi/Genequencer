@@ -38,8 +38,7 @@ public class EncodeSequencer extends MaxObject{
 		// Setting some default values
 		userID = -1;
 		quantizationState = -1;
-		Arrays.fill(sequencerState, 0);
-				
+					
 	}
 	
 	public void inlet(int inletVal)

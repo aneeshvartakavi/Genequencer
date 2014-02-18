@@ -53,6 +53,10 @@ public class Decode extends MaxObject{
 			
 			sendToOutput();
 		}
+		else
+		{
+			bail("Incorrect message passed into decode");
+		}
 		    
 	}
 	

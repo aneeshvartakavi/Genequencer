@@ -1,8 +1,6 @@
 package messageProcessing;
 
 
-import java.util.Arrays;
-
 import com.cycling74.max.Atom;
 import com.cycling74.max.MaxObject;
 
@@ -38,35 +36,32 @@ public class DecodeSequencer extends MaxObject{
 		// Setting some default values
 		userID = -1;
 		quantizationState = -1;
-		Arrays.fill(sequencerState, 0);
-			
+					
 	}
 	
 	public void list(Atom[] args)
 	{
 		
-		//if(args.length==3)
-		//{
-			
-		userID = args[0].getInt();
-			
-		quantizationState = args[1].getInt();
-			
-		//String seqState = args.getString();
-			
-		//String[] items = seqState.replaceAll("\\[", "").replaceAll("\\]", "").replaceAll(" ","").replaceAll("\\\\",",").split(",");
-		//System.out.println(seqState);
-	
-		for (int i = 0; i < 24; i++) 
+		if(args.length==3)
 		{
+			userID = args[0].getInt();
+			quantizationState = args[1].getInt();
 			
-			String tempString = args[i+2].getString();
-			tempString = tempString.replaceAll("\\[", "").replaceAll("\\]", "").replaceAll(",","").replaceAll("\\\\","");
-			sequencerState[i] = Integer.parseInt(tempString);
+			String seqState = args[2].getString();
+			
+			String[] items = seqState.replaceAll("\\[", "").replaceAll("\\]", "").replaceAll(" ","").split(",");
+	
+			for (int i = 0; i < items.length; i++) 
+			{
+				sequencerState[i] = (int) Long.parseLong(items[i]);
+			}
+			
+			sendToOutput();
 		}
-			
-		sendToOutput();
-		//}
+		else
+		{
+			bail("Incorrect message passed into decodeSequencer");
+		}
 		    
 	}
 	
