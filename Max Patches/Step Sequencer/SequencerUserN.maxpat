@@ -51,7 +51,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1587.0, 664.0, 249.0, 31.0 ],
+					"patching_rect" : [ 1587.0, 664.0, 250.0, 31.0 ],
 					"text" : "0 1 \"[1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1]\""
 				}
 
@@ -492,19 +492,6 @@
 					"patching_rect" : [ 1073.0, 677.0, 298.0, 188.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 761.0, 277.0, 255.0, 173.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "keyin1" ],
-					"id" : "obj-57",
-					"maxclass" : "bpatcher",
-					"name" : "keyInputObject.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1073.0, 534.5, 354.0, 119.0 ]
 				}
 
 			}
@@ -1310,13 +1297,6 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "vstSynthGUI.maxpat",
-				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "keyInputObject.maxpat",
 				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
