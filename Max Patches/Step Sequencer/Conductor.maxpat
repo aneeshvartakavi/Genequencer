@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 3,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 637.0, 44.0, 396.0, 226.0 ],
+		"rect" : [ 0.0, 42.0, 1920.0, 952.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -313,7 +313,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 520.286621, 11.590004, 134.0, 100.0 ],
+					"patching_rect" : [ 520.286621, 11.590004, 134.0, 103.0 ],
 					"text" : "Outlets:\n1. Start/Stop (1/0)\n2.Tempo (int)\n3. Cue (message)\n4~11. Volume control\n12~19. Sound change\n "
 				}
 
@@ -327,8 +327,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 136.5, 287.410034, 76.0, 18.0 ],
-					"text" : "all tempo $1"
+					"patching_rect" : [ 136.5, 287.410034, 80.0, 18.0 ],
+					"text" : "ctrl tempo $1"
 				}
 
 			}
@@ -341,8 +341,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 7.5, 287.410034, 66.0, 18.0 ],
-					"text" : "all start $1"
+					"patching_rect" : [ 7.5, 287.410034, 70.0, 18.0 ],
+					"text" : "ctrl start $1"
 				}
 
 			}
@@ -706,7 +706,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "conductorControlObject.maxpat",
-				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
