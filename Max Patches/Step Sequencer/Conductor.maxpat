@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 2,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 42.0, 1920.0, 952.0 ],
+		"rect" : [ 18.0, 112.0, 386.0, 231.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -43,12 +43,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-12",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 986.5, 287.410034, 32.5, 18.0 ],
-					"text" : "sc7"
+					"patching_rect" : [ 986.5, 287.410034, 33.0, 32.0 ],
+					"text" : "sc7 $1"
 				}
 
 			}
@@ -61,8 +62,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 937.5, 287.410034, 32.5, 18.0 ],
-					"text" : "sc6"
+					"patching_rect" : [ 937.5, 287.410034, 46.0, 18.0 ],
+					"text" : "sc6 $1"
 				}
 
 			}
@@ -75,8 +76,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 889.5, 287.410034, 32.5, 18.0 ],
-					"text" : "sc5"
+					"patching_rect" : [ 889.5, 287.410034, 46.0, 18.0 ],
+					"text" : "sc5 $1"
 				}
 
 			}
@@ -89,8 +90,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 840.5, 287.410034, 32.5, 18.0 ],
-					"text" : "sc4"
+					"patching_rect" : [ 840.5, 287.410034, 46.0, 18.0 ],
+					"text" : "sc4 $1"
 				}
 
 			}
@@ -103,8 +104,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 786.5, 287.410034, 32.5, 18.0 ],
-					"text" : "sc3"
+					"patching_rect" : [ 786.5, 287.410034, 46.0, 18.0 ],
+					"text" : "sc3 $1"
 				}
 
 			}
@@ -117,8 +118,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 737.5, 287.410034, 32.5, 18.0 ],
-					"text" : "sc2"
+					"patching_rect" : [ 737.5, 287.410034, 46.0, 18.0 ],
+					"text" : "sc2 $1"
 				}
 
 			}
@@ -131,8 +132,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 684.5, 287.410034, 32.5, 18.0 ],
-					"text" : "sc1"
+					"patching_rect" : [ 684.5, 287.410034, 46.0, 18.0 ],
+					"text" : "sc1 $1"
 				}
 
 			}
@@ -145,8 +146,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 635.5, 287.410034, 32.5, 18.0 ],
-					"text" : "sc0"
+					"patching_rect" : [ 635.5, 287.410034, 46.0, 18.0 ],
+					"text" : "sc0 $1"
 				}
 
 			}
@@ -353,10 +354,10 @@
 					"name" : "conductorControlObject.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 19,
-					"outlettype" : [ "int", "int", "", "int", "int", "int", "int", "int", "int", "int", "int", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang" ],
+					"outlettype" : [ "int", "int", "", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int" ],
 					"patching_rect" : [ 30.299999, 4.0, 959.5, 211.180008 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 16.147034, 10.189012, 355.860016, 211.180008 ]
+					"presentation_rect" : [ 15.147034, 11.189012, 355.860016, 211.180008 ]
 				}
 
 			}
@@ -706,7 +707,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "conductorControlObject.maxpat",
-				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/B-rad/Desktop/Project-Studio-Group-E-cw-test/Project-Studio-Group-E-cw-test/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
