@@ -74,6 +74,14 @@ public class EncodeSequencer extends MaxObject{
 		
 	}
 	
+	public void clear()
+	{
+		if(getInlet()==0)
+		{
+			Arrays.fill(sequencerState,0);
+		}
+	}
+	
 	private void encodeMessage()
 	{
 		if(userID==-1)

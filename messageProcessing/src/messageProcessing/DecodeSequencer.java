@@ -4,6 +4,8 @@
 package messageProcessing;
 
 
+import java.util.Arrays;
+
 import com.cycling74.max.Atom;
 import com.cycling74.max.MaxObject;
 
@@ -71,6 +73,15 @@ public class DecodeSequencer extends MaxObject{
 	public void bang()
 	{
 		//sendToOutput();
+	}
+	
+	public void clear()
+	{
+		if(getInlet()==0)
+		{
+			Arrays.fill(sequencerState,0);
+			sendToOutput();
+		}
 	}
 	
 	private void sendToOutput()
