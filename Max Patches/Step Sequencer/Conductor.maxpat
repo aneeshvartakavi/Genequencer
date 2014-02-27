@@ -31,49 +31,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-7",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 263.0, 582.0, 50.0, 18.0 ],
-					"text" : "0 81"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 277.0, 528.0, 57.0, 20.0 ],
-					"text" : "route vol"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-3",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 465.0, 282.0, 50.0, 32.0 ],
-					"text" : "vol 0 81"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -122,7 +79,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 520.286621, 11.590004, 134.0, 103.0 ],
-					"text" : "Outlets:\n1. Start/Stop (1/0)\n2.Tempo (int)\n3. Cue (message)\n4. Volume control\n5. Sound change\n "
+					"text" : "Outlets:\n1. Start/Stop (1/0)\n2.Tempo (int)\n3. Cue (message)\n4. Volume control\n5. Sound change\n6. Sequencer init"
 				}
 
 			}
@@ -160,8 +117,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "conductorControlObject.maxpat",
 					"numinlets" : 0,
-					"numoutlets" : 5,
-					"outlettype" : [ "int", "int", "", "", "" ],
+					"numoutlets" : 6,
+					"outlettype" : [ "int", "int", "", "", "", "" ],
 					"patching_rect" : [ 30.299999, 4.0, 959.5, 211.180008 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.147034, 11.189012, 355.860016, 211.180008 ]
@@ -171,10 +128,10 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -183,7 +140,7 @@
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-11", 0 ]
+					"source" : [ "obj-22", 5 ]
 				}
 
 			}
@@ -225,15 +182,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-22", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -256,15 +204,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-5", 0 ]
 				}
 
 			}
