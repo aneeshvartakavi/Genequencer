@@ -1,3 +1,7 @@
+// Encode sequencer patterns
+// Aneesh Vartakavi 
+// GTCMT
+
 package messageProcessing;
 
 
