@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 42.0, 1920.0, 952.0 ],
+		"rect" : [ 0.0, 44.0, 1785.0, 996.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,112 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 24.0,
+					"frgb" : 0.0,
+					"id" : "obj-80",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1568.0, 774.0, 251.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 909.112488, 440.0, 287.0, 33.0 ],
+					"text" : "Current GA Target ID:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 24.0,
+					"frgb" : 0.0,
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1579.0, 507.839996, 287.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 909.112488, 389.304504, 256.0, 33.0 ],
+					"text" : "GA Rhythm Generator"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1520.0, 534.5, 46.0, 46.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1202.084473, 389.304504, 46.0, 46.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-79",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1666.25, 754.0, 50.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1202.084473, 446.5, 50.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 24.0,
+					"frgb" : 0.0,
+					"id" : "obj-31",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1191.75, 851.0, 314.5, 33.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 909.112488, 495.0, 306.0, 33.0 ],
+					"text" : "Current GA Pattern Preview"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "gav1" ],
+					"id" : "obj-19",
+					"maxclass" : "bpatcher",
+					"name" : "GAPreviewerObject.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1196.0, 888.170044, 306.0, 106.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 909.112488, 534.5, 306.0, 106.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.399093, 0.386033, 0.666667, 1.0 ],
+					"id" : "obj-37",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1046.02002, 919.170044, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 900.224976, 382.5, 365.775024, 258.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -218,40 +324,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1520.0, 824.0, 299.0, 89.0 ],
+					"patching_rect" : [ 1520.0, 824.0, 299.0, 87.0 ],
 					"text" : "How GA generator works?\n1) hit get data to get solution from the other users\n2) hit the bang to evolve and generate one pattern\n\nnote:\nPreview is to be implemented."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 24.0,
-					"frgb" : 0.0,
-					"id" : "obj-80",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1568.0, 774.0, 287.0, 34.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 495.0, 325.0, 287.0, 34.0 ],
-					"text" : "Current Solution: User ID:"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-79",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1666.25, 754.0, 50.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 788.0, 329.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -378,19 +452,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 199.519989, 65.720009, 72.0, 20.0 ],
 					"text" : "loadmess 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1520.0, 534.5, 46.0, 46.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 788.0, 275.5, 46.0, 46.0 ]
 				}
 
 			}
@@ -586,7 +647,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1613.0, 327.723022, 292.0, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 768.0, 120.0, 243.0, 98.299988 ]
+					"presentation_rect" : [ 965.0, 120.0, 301.0, 101.299988 ]
 				}
 
 			}
@@ -601,7 +662,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1313.0, 327.723022, 287.5, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 517.0, 120.0, 243.0, 98.299988 ]
+					"presentation_rect" : [ 651.0, 120.0, 301.0, 101.299988 ]
 				}
 
 			}
@@ -616,7 +677,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1013.97998, 327.723022, 288.0, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 267.0, 120.0, 243.0, 98.299988 ]
+					"presentation_rect" : [ 332.0, 120.0, 301.0, 101.299988 ]
 				}
 
 			}
@@ -631,7 +692,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 710.0, 327.723022, 290.97998, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 120.0, 243.0, 98.299988 ]
+					"presentation_rect" : [ 15.0, 120.0, 301.0, 101.299988 ]
 				}
 
 			}
@@ -646,7 +707,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1613.0, 208.850006, 292.0, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 768.0, 9.126984, 243.0, 98.299988 ]
+					"presentation_rect" : [ 965.0, 9.126984, 301.0, 101.299988 ]
 				}
 
 			}
@@ -661,7 +722,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1309.5, 208.850006, 291.0, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 517.0, 9.126984, 243.0, 98.299988 ]
+					"presentation_rect" : [ 651.0, 9.126984, 301.0, 101.299988 ]
 				}
 
 			}
@@ -676,7 +737,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1013.97998, 208.850006, 288.0, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 267.0, 9.126984, 243.0, 98.299988 ]
+					"presentation_rect" : [ 332.0, 9.126984, 301.0, 101.299988 ]
 				}
 
 			}
@@ -691,7 +752,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 710.0, 208.850006, 290.97998, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 9.126984, 243.0, 98.299988 ]
+					"presentation_rect" : [ 15.0, 9.126984, 301.0, 101.299988 ]
 				}
 
 			}
@@ -720,9 +781,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 243.019989, 146.72699, 100.0, 34.0 ],
+					"patching_rect" : [ 243.019989, 146.72699, 100.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.394043, 329.0, 100.0, 34.0 ],
+					"presentation_rect" : [ 34.394043, 329.0, 100.0, 33.0 ],
 					"varname" : "umenu"
 				}
 
@@ -736,9 +797,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 243.019989, 114.0, 103.0, 34.0 ],
+					"patching_rect" : [ 243.019989, 114.0, 103.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.394043, 282.0, 103.0, 34.0 ],
+					"presentation_rect" : [ 34.394043, 282.0, 103.0, 33.0 ],
 					"text" : "User ID"
 				}
 
@@ -754,24 +815,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 286.159973, 462.459961, 150.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 179.0, 329.0, 180.0, 25.0 ],
+					"presentation_rect" : [ 165.0, 333.0, 180.0, 25.0 ],
 					"text" : "Cue 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 24.0,
-					"frgb" : 0.0,
-					"id" : "obj-13",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1579.0, 507.839996, 287.0, 34.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 495.0, 282.0, 256.0, 34.0 ],
-					"text" : "GA Rhythm Generator"
 				}
 
 			}
@@ -785,7 +830,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.538021, 30.719997, 158.0, 75.0 ],
+					"patching_rect" : [ 33.538021, 30.719997, 158.0, 74.0 ],
 					"text" : "Inlets:\n1. Send Serial Data (Bang)\n2. Serial Data Input\nOutlets:\n1. Serial Data Output"
 				}
 
@@ -800,7 +845,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.538021, 285.627014, 158.0, 117.0 ],
+					"patching_rect" : [ 33.538021, 285.627014, 158.0, 114.0 ],
 					"text" : "Inlets:\n1. Trigger Bang\n2. Note Number\n3. Duration (ms)\n4. MIDI Program Num\n5. Volume (0-127)\nOutlets:\n1. Synthesized  Audio"
 				}
 
@@ -815,7 +860,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.538021, 123.126984, 158.0, 158.0 ],
+					"patching_rect" : [ 33.538021, 123.126984, 158.0, 154.0 ],
 					"text" : "Inlets:\n1. Start/Stop (1/0)\n2. Tempo (Int)\n3. Send Serial Data (Bang)\n4. Serial Data Input\n5. User ID\nOutlets:\n1. Row 1 Bang\n2. Row 2 Bang\n3. Row 3 Bang\n4. Serial Data Output"
 				}
 
@@ -964,7 +1009,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 337.284576, 959.627319, 186.0, 89.287109 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 583.0, 382.5, 187.331009, 75.0 ]
+					"presentation_rect" : [ 570.063049, 565.5, 187.331009, 75.0 ]
 				}
 
 			}
@@ -977,7 +1022,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 403.019989, 51.72699, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.275024, 0.609009, 1061.669067, 647.390991 ]
+					"presentation_rect" : [ -4.690552, 0.054504, 1291.669067, 666.890991 ]
 				}
 
 			}
@@ -1084,6 +1129,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 1205.5, 996.0, 1182.0, 996.0, 1182.0, 894.0, 1086.0, 894.0, 1086.0, 435.0, 660.0, 435.0, 660.0, 426.0, 486.659973, 426.0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1134,10 +1189,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
+					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1607.5, 612.0, 984.0, 612.0, 984.0, 435.0, 660.0, 435.0, 660.0, 426.0, 486.659973, 426.0 ],
+					"midpoints" : [ 1607.5, 687.0, 1176.0, 687.0, 1176.0, 885.0, 1205.5, 885.0 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -1359,6 +1414,16 @@
 					"hidden" : 0,
 					"midpoints" : [ 1129.47998, 114.0, 1129.47998, 114.0 ],
 					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 293.019989, 533.448486, 1492.5, 533.448486 ],
+					"source" : [ "obj-54", 1 ]
 				}
 
 			}
@@ -1977,6 +2042,7 @@
 					"destination" : [ "obj-14", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 137.038025, 483.0, 136.538025, 483.0 ],
 					"source" : [ "obj-85", 1 ]
 				}
 
@@ -1986,6 +2052,7 @@
 					"destination" : [ "obj-24", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 123.038025, 492.0, 75.538025, 492.0 ],
 					"source" : [ "obj-85", 0 ]
 				}
 
@@ -1995,6 +2062,7 @@
 					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 123.038025, 492.0, 51.0, 492.0, 51.0, 633.0, 75.538025, 633.0 ],
 					"source" : [ "obj-85", 0 ]
 				}
 
@@ -2004,6 +2072,7 @@
 					"destination" : [ "obj-32", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 137.038025, 528.0, 168.0, 528.0, 168.0, 657.0, 136.538025, 657.0 ],
 					"source" : [ "obj-85", 1 ]
 				}
 
@@ -2011,21 +2080,28 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "oneShotSampler.maxpat",
-				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sequencerViewerObjectCopy.maxpat",
-				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sequencerObjectCopy.maxpat",
-				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "GAPreviewerObject.maxpat",
+				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
