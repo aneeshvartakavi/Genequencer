@@ -4,9 +4,9 @@ public class Algorithm {
 
 	// Some defaults here
 	private static double crossoverRate = 0.5;
-    private static double mutationRate = 0.000001;
+    private static double mutationRate = 0.00001;
     private static int tournamentSize = 10;
-    private static boolean elitism = false;
+    private static boolean elitism = true;
 	
     public static void initialize(double newCrossoverRate, double newMutationRate, int newTournamentSize, boolean newElitism)
     {

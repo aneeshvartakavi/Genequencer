@@ -34,9 +34,10 @@ public class Individual {
     }
     
     public void generateIndividual(String constraintString){
+    	//System.out.println(constraintString);
     	for(int i=0;i<constraintString.length();i++){
     		if(constraintString.charAt(i) == ('1')){
-    			if(Math.random() > 0.2){
+    			if(Math.random() > 0.4){
     				byte gene = (byte) 1;
     				genes[i] = gene;
     			}else{

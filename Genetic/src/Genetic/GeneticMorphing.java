@@ -8,15 +8,16 @@ import com.cycling74.max.MaxObject;
 
 public class GeneticMorphing extends MaxObject{
 
-	String solutionString = "000000000000100010010101";
-	String originalPop ="101011010101101011010101";
+	String solutionString = "000000000000000000000001";
+	String originalPop ="000000000000000000000010";
 	
 	// Algorithm Parameters
-	double rateMutation = 0.5;
-	double rateCrossover = 0.0001;
+	double rateMutation = 0.2;
+	double rateCrossover = 0.05;
 	
 	// Sequencer Patterns
 	private int[] sequencerState = new int[24];
+
 	private int userID;
 	private int quantizationState;
 	
@@ -38,7 +39,7 @@ public class GeneticMorphing extends MaxObject{
 		Algorithm.initialize(rateCrossover,rateMutation, 10,false);
 		//create genetic related variables
 		FitnessCalc.setSolution(solutionString);
-		myPop = new Population(5, originalPop);
+		myPop = new Population(10, originalPop);
 	}
     
 	
@@ -46,10 +47,21 @@ public class GeneticMorphing extends MaxObject{
 	public void bang()
 	{
 		// Evolve population once
-		myPop = Algorithm.evolvePopulation(myPop);
+		if(myPop.getFittest().getFitness() < FitnessCalc.getMaxFitness())
+		{
+			myPop = Algorithm.evolvePopulation(myPop);
+		
+		}
+		
+		if(myPop.getFittest().getFitness() == FitnessCalc.getMaxFitness())
+		{
+			System.out.println("GA solution found!");
+		}
+				
+				
 		// Get the fittest
 		String fittest = myPop.getFittest().toString();
-		
+		//System.out.println("Fittest = " + fittest);
 		// Encode the fittest and send it to the output
 		for(int i=0; i<24; i++)
 		{
@@ -81,10 +93,13 @@ public class GeneticMorphing extends MaxObject{
 		if(getInlet()==3)
 		{	
 			rateCrossover = inletVal;
+			Algorithm.initialize(rateCrossover,rateMutation, 10,false);
+					
 		}
 		else if(getInlet()==4)
 		{	
 			rateMutation = inletVal;
+			Algorithm.initialize(rateCrossover,rateMutation, 10,false);
 		}
 	}
     
@@ -93,10 +108,12 @@ public class GeneticMorphing extends MaxObject{
 		if(getInlet()==3)
 		{	
 			rateCrossover = inletVal;
+			Algorithm.initialize(rateCrossover,rateMutation, 10,false);
 		}
 		else if(getInlet()==4)
 		{	
 			rateMutation = inletVal;
+			Algorithm.initialize(rateCrossover,rateMutation, 10,false);
 		}
 	}
 	
@@ -113,16 +130,23 @@ public class GeneticMorphing extends MaxObject{
 				
 				String seqState = args[2].getString();
 				
-				seqState  = seqState.replaceAll("\\[", "").replaceAll("\\]", "").replaceAll(" ","");
+				seqState  = seqState.replaceAll("\\[", "").replaceAll("\\]", "").replaceAll(" ","").replaceAll(",","");
 				
 				//Assign to relevant variable
 				if(inlet==1)
 				{
-					originalPop = seqState;
+					originalPop = seqState.toString();
+					System.out.println("Setting original population to : " + originalPop);
+					myPop = new Population(10,originalPop);
+				//	FitnessCalc.setSolution(solutionString);
 				}
 				else
 				{
-					solutionString = seqState;
+					solutionString = seqState.toString();
+					System.out.println("Setting target to : " + solutionString);
+				//	myPop = new Population(10, originalPop);
+					FitnessCalc.setSolution(solutionString);
+					
 				}
 						
 			}
@@ -133,6 +157,15 @@ public class GeneticMorphing extends MaxObject{
 		}
 		    
 	}
+	
+//	private void reInit()
+//	{
+//		// Initialize some parameters
+//		Algorithm.initialize(rateCrossover,rateMutation, 10,true);
+//		//create genetic related variables
+//		FitnessCalc.setSolution(solutionString);
+//		myPop = new Population(5, originalPop);
+//	}
 	
 //	private void sendToOutput()
 //	{

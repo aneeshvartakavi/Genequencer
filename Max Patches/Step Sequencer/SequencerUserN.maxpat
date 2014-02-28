@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 8.0, 50.0, 1514.0, 952.0 ],
+		"rect" : [ 8.0, 50.0, 1498.0, 952.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -168,6 +168,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-82",
 					"maxclass" : "number",
+					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
@@ -198,6 +199,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-57",
 					"maxclass" : "number",
+					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
