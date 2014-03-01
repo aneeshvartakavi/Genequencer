@@ -1,6 +1,7 @@
 package Genetic;
 
 import java.util.Arrays;
+import java.util.Random;
 
 import com.cycling74.max.Atom;
 import com.cycling74.max.DataTypes;
@@ -23,15 +24,16 @@ public class GeneticMorphing extends MaxObject{
 	
     Population myPop;
 
+    int toSparsify = 0;
     
 	public GeneticMorphing(Atom[] args)
 	{
 		
-		declareInlets(new int[]{DataTypes.ALL,DataTypes.ALL,DataTypes.ALL,DataTypes.FLOAT,DataTypes.FLOAT});
+		declareInlets(new int[]{DataTypes.ALL,DataTypes.ALL,DataTypes.ALL,DataTypes.FLOAT,DataTypes.FLOAT, DataTypes.INT});
 		declareOutlets(new int[]{DataTypes.ALL});
 		
 		setInletAssist(new String[] { "Bang to evolve", "Sequencer State (encoded)", "Solution (encoded)", 
-				"Crossover Rate", "Mutation Rate" });
+				"Crossover Rate", "Mutation Rate", "Sparsity Toggle"});
 		setOutletAssist(new String[] { "Encoded message outlet"});
 		
 		
@@ -68,6 +70,11 @@ public class GeneticMorphing extends MaxObject{
 			sequencerState[i] = Integer.parseInt(Character.toString(fittest.charAt(i)));
 		}
 		
+		if(toSparsify==1)
+		{
+			sparsify();
+		}
+		
 		//sendToOutput();
 		Atom[] outputMessage = { Atom.newAtom(userID),Atom.newAtom(quantizationState), Atom.newAtom(Arrays.toString(sequencerState))};
 		outlet(0,outputMessage);
@@ -100,6 +107,11 @@ public class GeneticMorphing extends MaxObject{
 		{	
 			rateMutation = inletVal;
 			Algorithm.initialize(rateCrossover,rateMutation, 10,false);
+		}
+		
+		else if(getInlet()==5)
+		{
+			toSparsify = inletVal;
 		}
 	}
     
@@ -156,6 +168,77 @@ public class GeneticMorphing extends MaxObject{
 			}
 		}
 		    
+	}
+	
+	private void sparsify()
+	{
+		Random rand = new Random();
+		
+		for(int i=0;i<8;i++)
+		{
+			if(sequencerState[i]==1 && sequencerState[8+i]==1 && sequencerState[16+i]==1)
+			{
+				// If all the rows are on
+				
+			    int randomNum = rand.nextInt((2) + 1) + 1;
+			    if(randomNum==1)
+			    {
+			    	sequencerState[8+i]=0;
+			    	sequencerState[16+i]=0;
+			    }
+			    else if(randomNum==2)
+			    {
+			    	sequencerState[i]=0;
+			    	sequencerState[16+i]=0;
+			    }
+			    else
+			    {
+			    	sequencerState[i]=0;
+			    	sequencerState[8+i]=0;
+			    }
+			}
+			else if(sequencerState[i]==1 && sequencerState[8+i]==1)
+			{
+				int randomNum = rand.nextInt((1) + 1) + 1;
+			    if(randomNum==1)
+			    {
+			    	sequencerState[i]=0;
+			    }
+			    else
+			    {
+			    	sequencerState[8+i]=0;
+			    }
+
+			}
+			
+			else if(sequencerState[8+i]==1 && sequencerState[16+i]==1)
+			{
+				int randomNum = rand.nextInt((1) + 1) + 1;
+			    if(randomNum==1)
+			    {
+			    	sequencerState[8+i]=0;
+			    }
+			    else
+			    {
+			    	sequencerState[16+i]=0;
+			    }
+
+			}
+			
+			else if(sequencerState[i]==1 && sequencerState[16+i]==1)
+			{
+				int randomNum = rand.nextInt((1) + 1) + 1;
+			    if(randomNum==1)
+			    {
+			    	sequencerState[i]=0;
+			    }
+			    else
+			    {
+			    	sequencerState[16+i]=0;
+			    }
+
+			}
+		}
 	}
 	
 //	private void reInit()
