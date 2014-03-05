@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 630.0, 389.0, 825.0, 637.0 ],
+		"rect" : [ 540.0, 92.0, 887.0, 816.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -117,11 +117,11 @@
 					"presentation_rect" : [ 136.0, 8.75, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-15", "slider", "float", 64.0, 5, "obj-23", "slider", "float", 64.0, 5, "obj-24", "slider", "float", 62.0, 5, "obj-25", "slider", "float", 61.0, 5, "obj-16", "toggle", "int", 1, 5, "obj-19", "toggle", "int", 0 ]
+							"data" : [ 5, "obj-15", "slider", "float", 0.0, 5, "obj-23", "slider", "float", 0.0, 5, "obj-24", "slider", "float", 0.0, 5, "obj-25", "slider", "float", 0.0, 5, "obj-16", "toggle", "int", 1, 5, "obj-19", "toggle", "int", 0 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-15", "slider", "float", 64.0, 5, "obj-23", "slider", "float", 64.0, 5, "obj-24", "slider", "float", 62.0, 5, "obj-25", "slider", "float", 61.0, 5, "obj-16", "toggle", "int", 1 ]
+							"data" : [ 5, "obj-15", "slider", "float", 62.0, 5, "obj-23", "slider", "float", 64.0, 5, "obj-24", "slider", "float", 59.0, 5, "obj-25", "slider", "float", 68.0, 5, "obj-16", "toggle", "int", 1, 5, "obj-19", "toggle", "int", 0 ]
 						}
  ]
 				}
@@ -872,7 +872,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 172.5, 628.0, 25.0, 25.0 ]
+					"patching_rect" : [ 183.5, 657.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -985,7 +985,7 @@
 					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 37.0, 615.0, 182.0, 615.0 ],
+					"midpoints" : [ 37.0, 615.0, 193.0, 615.0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 

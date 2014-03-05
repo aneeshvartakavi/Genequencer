@@ -29,14 +29,14 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"args" : [ "se2" ],
-					"id" : "obj-76",
+					"args" : [ "rv1" ],
+					"id" : "obj-16",
 					"maxclass" : "bpatcher",
-					"name" : "soundEffectsObject.maxpat",
+					"name" : "reverbObject.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 631.0, 1133.0, 306.0, 157.0 ]
+					"patching_rect" : [ 600.419861, 1114.0, 309.0, 159.0 ]
 				}
 
 			}
@@ -472,7 +472,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1274.0, 1023.0, 299.0, 74.0 ],
+					"patching_rect" : [ 1274.0, 1023.0, 299.0, 60.0 ],
 					"text" : "How GA works?\n1) set target as solution from the other users\n2) set source\n3) hit the bang to evolve and generate one pattern\n"
 				}
 
@@ -1080,15 +1080,6 @@
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-76", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 2 ],
 					"disabled" : 0,
@@ -2020,15 +2011,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-76", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-79", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2099,7 +2081,7 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-76::obj-71" : [ "live.gain~[2]", "live.gain~", 0 ]
+			"obj-16::obj-71" : [ "live.gain~[2]", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -2131,7 +2113,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "soundEffectsObject.maxpat",
+				"name" : "reverbObject.maxpat",
 				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
