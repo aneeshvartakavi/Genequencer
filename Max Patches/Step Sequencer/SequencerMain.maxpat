@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 293.0, 181.0, 1450.0, 903.0 ],
+		"rect" : [ 86.0, 55.0, 1450.0, 903.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,19 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"args" : [ "se2" ],
+					"id" : "obj-76",
+					"maxclass" : "bpatcher",
+					"name" : "soundEffectsObject.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 631.0, 1133.0, 306.0, 157.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -1034,7 +1047,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 540.159973, 1059.163086, 45.0, 45.0 ]
+					"patching_rect" : [ 507.159973, 1313.163086, 45.0, 45.0 ]
 				}
 
 			}
@@ -1068,20 +1081,9 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
+					"destination" : [ "obj-76", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 346.784576, 1059.0, 537.0, 1059.0, 537.0, 1056.0, 575.659973, 1056.0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 346.784576, 1059.0, 537.0, 1059.0, 537.0, 1056.0, 549.659973, 1056.0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -1171,7 +1173,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 600.919861, 1059.0, 585.0, 1059.0, 585.0, 1056.0, 549.659973, 1056.0 ],
+					"midpoints" : [ 600.919861, 1059.0, 585.0, 1059.0, 585.0, 1056.0, 516.659973, 1056.0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -1701,8 +1703,8 @@
 					"destination" : [ "obj-59", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 719.5, 306.0, 696.0, 306.0, 696.0, 606.0, 1535.25, 606.0 ],
-					"source" : [ "obj-65", 0 ]
+					"midpoints" : [ 855.48999, 324.0, 1002.0, 324.0, 1002.0, 759.0, 1535.25, 759.0 ],
+					"source" : [ "obj-65", 1 ]
 				}
 
 			}
@@ -1741,8 +1743,8 @@
 					"destination" : [ "obj-60", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1023.47998, 324.0, 1008.0, 324.0, 1008.0, 759.0, 1567.25, 759.0 ],
-					"source" : [ "obj-66", 0 ]
+					"midpoints" : [ 1157.97998, 324.0, 1302.0, 324.0, 1302.0, 759.0, 1567.25, 759.0 ],
+					"source" : [ "obj-66", 1 ]
 				}
 
 			}
@@ -1791,8 +1793,8 @@
 					"destination" : [ "obj-61", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1319.0, 324.0, 1308.0, 324.0, 1308.0, 759.0, 1602.0, 759.0, 1602.0, 771.0, 1606.75, 771.0 ],
-					"source" : [ "obj-67", 0 ]
+					"midpoints" : [ 1455.0, 324.0, 1602.0, 324.0, 1602.0, 492.0, 1575.0, 492.0, 1575.0, 543.0, 1584.0, 543.0, 1584.0, 771.0, 1606.75, 771.0 ],
+					"source" : [ "obj-67", 1 ]
 				}
 
 			}
@@ -1831,8 +1833,8 @@
 					"destination" : [ "obj-62", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1622.5, 324.0, 1608.0, 324.0, 1608.0, 492.0, 1575.0, 492.0, 1575.0, 543.0, 1584.0, 543.0, 1584.0, 768.0, 1639.25, 768.0 ],
-					"source" : [ "obj-68", 0 ]
+					"midpoints" : [ 1759.0, 306.0, 1608.0, 306.0, 1608.0, 492.0, 1575.0, 492.0, 1575.0, 543.0, 1584.0, 543.0, 1584.0, 768.0, 1639.25, 768.0 ],
+					"source" : [ "obj-68", 1 ]
 				}
 
 			}
@@ -1871,8 +1873,8 @@
 					"destination" : [ "obj-63", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 719.5, 606.0, 1584.0, 606.0, 1584.0, 768.0, 1674.75, 768.0 ],
-					"source" : [ "obj-69", 0 ]
+					"midpoints" : [ 855.48999, 606.0, 1584.0, 606.0, 1584.0, 768.0, 1674.75, 768.0 ],
+					"source" : [ "obj-69", 1 ]
 				}
 
 			}
@@ -1911,8 +1913,8 @@
 					"destination" : [ "obj-73", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1023.47998, 804.0, 1701.0, 804.0, 1701.0, 771.0, 1714.75, 771.0 ],
-					"source" : [ "obj-70", 0 ]
+					"midpoints" : [ 1157.97998, 804.0, 1701.0, 804.0, 1701.0, 771.0, 1714.75, 771.0 ],
+					"source" : [ "obj-70", 1 ]
 				}
 
 			}
@@ -1951,8 +1953,8 @@
 					"destination" : [ "obj-74", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1322.5, 621.0, 1788.0, 621.0, 1788.0, 759.0, 1749.0, 759.0, 1749.0, 771.0, 1747.25, 771.0 ],
-					"source" : [ "obj-71", 0 ]
+					"midpoints" : [ 1456.75, 621.0, 1788.0, 621.0, 1788.0, 759.0, 1749.0, 759.0, 1749.0, 771.0, 1747.25, 771.0 ],
+					"source" : [ "obj-71", 1 ]
 				}
 
 			}
@@ -1991,8 +1993,8 @@
 					"destination" : [ "obj-77", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1622.5, 492.0, 1788.0, 492.0, 1788.0, 768.0, 1795.0, 768.0 ],
-					"source" : [ "obj-72", 0 ]
+					"midpoints" : [ 1759.0, 492.0, 1788.0, 492.0, 1788.0, 768.0, 1795.0, 768.0 ],
+					"source" : [ "obj-72", 1 ]
 				}
 
 			}
@@ -2013,6 +2015,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 1747.25, 813.0, 1674.75, 813.0 ],
 					"source" : [ "obj-74", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-76", 0 ]
 				}
 
 			}
@@ -2087,6 +2098,10 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-76::obj-71" : [ "live.gain~[2]", "live.gain~", 0 ]
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "oneShotSampler.maxpat",
 				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
@@ -2112,6 +2127,20 @@
 				"name" : "GAPreviewerObject.maxpat",
 				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "soundEffectsObject.maxpat",
+				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "yafr2.maxpat",
+				"bootpath" : "/Applications/Max 6.1/examples/effects/reverb/lib",
+				"patcherrelativepath" : "../../../../../../../Applications/Max 6.1/examples/effects/reverb/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
