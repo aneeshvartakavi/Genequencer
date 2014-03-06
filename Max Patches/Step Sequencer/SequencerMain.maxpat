@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 86.0, 55.0, 1450.0, 903.0 ],
+		"rect" : [ 86.0, 55.0, 1594.0, 1034.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -29,6 +29,35 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"args" : [ "fg1" ],
+					"id" : "obj-38",
+					"maxclass" : "bpatcher",
+					"name" : "flangingObject.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 183.0, 1103.0, 298.0, 152.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 580.728577, 314.5, 298.0, 152.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-32",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 527.0, 853.0, 50.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"args" : [ "rv1" ],
 					"id" : "obj-16",
 					"maxclass" : "bpatcher",
@@ -36,7 +65,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 600.419861, 1114.0, 309.0, 159.0 ]
+					"patching_rect" : [ 177.5, 1272.0, 309.0, 159.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 569.728577, 481.5, 309.0, 159.0 ]
 				}
 
 			}
@@ -1047,7 +1078,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 507.159973, 1313.163086, 45.0, 45.0 ]
+					"patching_rect" : [ 516.0, 1455.163086, 45.0, 45.0 ]
 				}
 
 			}
@@ -1061,7 +1092,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 337.284576, 959.627319, 186.0, 89.287109 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 570.063049, 565.5, 187.331009, 75.0 ]
+					"presentation_rect" : [ 374.063049, 297.5, 187.331009, 75.0 ]
 				}
 
 			}
@@ -1080,6 +1111,15 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 2 ],
 					"disabled" : 0,
@@ -1151,6 +1191,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1164,7 +1222,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 600.919861, 1059.0, 585.0, 1059.0, 585.0, 1056.0, 516.659973, 1056.0 ],
+					"midpoints" : [ 600.919861, 1059.0, 585.0, 1059.0, 585.0, 1056.0, 525.5, 1056.0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -1276,6 +1334,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 369.159973, 300.0, 369.159973, 300.0 ],
 					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-38", 0 ]
 				}
 
 			}
@@ -2123,6 +2190,13 @@
 				"name" : "yafr2.maxpat",
 				"bootpath" : "/Applications/Max 6.1/examples/effects/reverb/lib",
 				"patcherrelativepath" : "../../../../../../../Applications/Max 6.1/examples/effects/reverb/lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "flangingObject.maxpat",
+				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
