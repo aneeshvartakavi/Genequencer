@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 48.0, 204.0, 1303.0, 721.0 ],
+		"rect" : [ 42.0, 157.0, 1084.0, 588.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,21 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"args" : [ "dy1" ],
+					"id" : "obj-27",
+					"maxclass" : "bpatcher",
+					"name" : "delayObject.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 162.5, 1613.0, 312.0, 170.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 877.728577, 213.5, 312.0, 170.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"args" : [ "ft1" ],
 					"id" : "obj-9",
@@ -1093,7 +1108,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 501.0, 1718.163086, 45.0, 45.0 ]
+					"patching_rect" : [ 488.0, 1819.163086, 45.0, 45.0 ]
 				}
 
 			}
@@ -1228,7 +1243,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 600.919861, 1059.0, 585.0, 1059.0, 585.0, 1056.0, 510.5, 1056.0 ],
+					"midpoints" : [ 600.919861, 1059.0, 585.0, 1059.0, 585.0, 1056.0, 497.5, 1056.0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -1260,6 +1275,24 @@
 					"hidden" : 0,
 					"midpoints" : [ 1606.75, 753.0, 1176.0, 753.0, 1176.0, 885.0, 1205.5, 885.0 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
@@ -2154,16 +2187,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-27", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
@@ -2226,6 +2250,13 @@
 			}
 , 			{
 				"name" : "lowpassObject.maxpat",
+				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "delayObject.maxpat",
 				"bootpath" : "/Users/chih-wei/Desktop/GTCMT/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
