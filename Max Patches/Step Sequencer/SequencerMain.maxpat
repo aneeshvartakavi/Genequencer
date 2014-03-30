@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 8.0, 50.0, 1920.0, 952.0 ],
+		"rect" : [ 0.0, 50.0, 1920.0, 952.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,20 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"args" : [ "scoreView" ],
+					"id" : "obj-8",
+					"maxclass" : "bpatcher",
+					"name" : "scoreDisplayObject.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 0,
+					"patching_rect" : [ 20.538021, 621.258972, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 25.394043, 332.25, 333.0, 35.5 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -270,7 +284,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1575.0, 923.0, 290.0, 144.0 ],
+					"patching_rect" : [ 1575.0, 923.0, 290.0, 141.0 ],
 					"text" : "GA Param settings\n1. Crossover rate 1-100 \n(This sets how fast you reach the solution by directed search)\n2. Mutation rate - 1-1000\n(This decides how much random genes mutate, its effects on speed can be positive or negative)\n3. Sparsity\nA control that sets only one value in a time step, so multiple notes don't play at the same step"
 				}
 
@@ -285,10 +299,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1892.0, 628.0, 56.0, 34.0 ],
+					"patching_rect" : [ 1892.0, 628.0, 56.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1149.112549, 490.5, 56.0, 34.0 ],
+					"presentation_rect" : [ 1149.112549, 490.5, 56.0, 33.0 ],
 					"text" : "Toggle \nSparsity"
 				}
 
@@ -402,10 +416,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1805.25, 635.0, 67.0, 34.0 ],
+					"patching_rect" : [ 1805.25, 635.0, 67.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1188.25, 424.0, 67.0, 34.0 ],
+					"presentation_rect" : [ 1188.25, 424.0, 67.0, 33.0 ],
 					"text" : "Mutation Rate"
 				}
 
@@ -420,10 +434,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1710.0, 635.0, 67.0, 34.0 ],
+					"patching_rect" : [ 1710.0, 635.0, 67.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1092.862549, 424.0, 67.0, 34.0 ],
+					"presentation_rect" : [ 1092.862549, 424.0, 67.0, 33.0 ],
 					"text" : "Crossover Rate"
 				}
 
@@ -517,9 +531,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1579.0, 507.839996, 195.0, 25.0 ],
+					"patching_rect" : [ 1579.0, 507.839996, 195.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1041.112549, 389.304504, 174.0, 25.0 ],
+					"presentation_rect" : [ 1041.112549, 389.304504, 174.0, 24.0 ],
 					"text" : "GA Rhythm Generator"
 				}
 
@@ -562,9 +576,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1191.75, 851.0, 213.0, 25.0 ],
+					"patching_rect" : [ 1191.75, 851.0, 213.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 909.112488, 495.0, 208.0, 25.0 ],
+					"presentation_rect" : [ 909.112488, 495.0, 208.0, 24.0 ],
 					"text" : "Current GA Pattern Preview"
 				}
 
@@ -664,7 +678,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1274.0, 1023.0, 299.0, 62.0 ],
+					"patching_rect" : [ 1274.0, 1023.0, 299.0, 60.0 ],
 					"text" : "How GA works?\n1) set target as solution from the other users\n2) set source\n3) hit the bang to evolve and generate one pattern\n"
 				}
 
@@ -997,9 +1011,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 243.019989, 146.72699, 128.0, 34.0 ],
+					"patching_rect" : [ 243.019989, 146.72699, 128.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.394043, 297.5, 130.605957, 34.0 ],
+					"presentation_rect" : [ 34.394043, 297.5, 130.605957, 33.0 ],
 					"varname" : "umenu"
 				}
 
@@ -1014,26 +1028,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 243.019989, 94.0, 103.0, 62.0 ],
+					"patching_rect" : [ 243.019989, 94.0, 103.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.394043, 259.0, 121.0, 34.0 ],
+					"presentation_rect" : [ 34.394043, 259.0, 121.0, 33.0 ],
 					"text" : "Username"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 18.0,
-					"id" : "obj-23",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 286.159973, 462.459961, 150.0, 25.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 165.0, 333.0, 180.0, 25.0 ],
-					"text" : "Cue 3"
 				}
 
 			}
@@ -1047,7 +1045,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.538021, 30.719997, 158.0, 75.0 ],
+					"patching_rect" : [ 33.538021, 30.719997, 158.0, 74.0 ],
 					"text" : "Inlets:\n1. Send Serial Data (Bang)\n2. Serial Data Input\nOutlets:\n1. Serial Data Output"
 				}
 
@@ -1062,7 +1060,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.538021, 285.627014, 158.0, 117.0 ],
+					"patching_rect" : [ 33.538021, 285.627014, 158.0, 114.0 ],
 					"text" : "Inlets:\n1. Trigger Bang\n2. Note Number\n3. Duration (ms)\n4. MIDI Program Num\n5. Volume (0-127)\nOutlets:\n1. Synthesized  Audio"
 				}
 
@@ -1077,7 +1075,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.538021, 123.126984, 158.0, 158.0 ],
+					"patching_rect" : [ 33.538021, 123.126984, 158.0, 154.0 ],
 					"text" : "Inlets:\n1. Start/Stop (1/0)\n2. Tempo (Int)\n3. Send Serial Data (Bang)\n4. Serial Data Input\n5. User ID\nOutlets:\n1. Row 1 Bang\n2. Row 2 Bang\n3. Row 3 Bang\n4. Serial Data Output"
 				}
 
@@ -1464,6 +1462,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1534,16 +1541,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 425.159973, 459.0, 426.659973, 459.0 ],
-					"source" : [ "obj-41", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1579,6 +1576,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 397.159973, 366.0, 474.0, 366.0, 474.0, 189.0, 1104.0, 189.0, 1104.0, 81.0, 1129.47998, 81.0 ],
 					"source" : [ "obj-41", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-41", 2 ]
 				}
 
 			}
@@ -1759,6 +1765,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 1725.75, 693.0, 1725.75, 693.0 ],
 					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-58", 0 ]
 				}
 
 			}
@@ -2349,63 +2364,70 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "oneShotSampler.maxpat",
-				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sequencerViewerObjectCopy.maxpat",
-				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sequencerObjectCopy.maxpat",
-				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "GAPreviewerObject.maxpat",
-				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "reverbObject.maxpat",
-				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "yafr2.maxpat",
-				"bootpath" : "/Program Files (x86)/Cycling '74/Max 6.1/examples/effects/reverb/lib",
-				"patcherrelativepath" : "../../../../../../../Program Files (x86)/Cycling '74/Max 6.1/examples/effects/reverb/lib",
+				"bootpath" : "/Applications/Max 6.1/examples/effects/reverb/lib",
+				"patcherrelativepath" : "../../../../../../Applications/Max 6.1/examples/effects/reverb/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "flangingObject.maxpat",
-				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "lowpassObject.maxpat",
-				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "delayObject.maxpat",
-				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "scoreDisplayObject.maxpat",
+				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
