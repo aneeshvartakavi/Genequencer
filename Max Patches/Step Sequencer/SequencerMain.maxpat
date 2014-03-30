@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 50.0, 1920.0, 952.0 ],
+		"rect" : [ 8.0, 88.0, 819.0, 392.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -29,6 +29,54 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 212.587311, 562.067932, 99.0, 20.0 ],
+					"text" : "udpreceive 7400"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 24.0,
+					"frgb" : 0.0,
+					"id" : "obj-23",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 258.019989, 109.0, 103.0, 62.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 3.0, 181.621475, 129.052551, 34.0 ],
+					"text" : "Start/Stop:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 24.0,
+					"frgb" : 0.0,
+					"id" : "obj-5",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 258.019989, 109.0, 103.0, 62.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 496.312286, 181.621475, 141.886169, 34.0 ],
+					"text" : "Instructions:"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"args" : [ "scoreView" ],
 					"id" : "obj-8",
 					"maxclass" : "bpatcher",
@@ -37,7 +85,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.538021, 621.258972, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.394043, 332.25, 333.0, 35.5 ]
+					"presentation_rect" : [ 638.198486, 181.621475, 333.0, 35.5 ]
 				}
 
 			}
@@ -52,7 +100,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 742.159973, 1130.0, 88.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 219.0, 667.0, 88.0, 20.0 ],
+					"presentation_rect" : [ 278.251923, 488.417603, 88.0, 20.0 ],
 					"text" : "Get Preset"
 				}
 
@@ -68,7 +116,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 878.659973, 1130.0, 88.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 42.0, 667.0, 79.0, 20.0 ],
+					"presentation_rect" : [ 101.25193, 488.417603, 79.0, 20.0 ],
 					"text" : "Store Preset"
 				}
 
@@ -82,7 +130,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 834.326721, 1169.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 127.0, 667.0, 20.0, 20.0 ]
+					"presentation_rect" : [ 186.251923, 488.417603, 20.0, 20.0 ]
 				}
 
 			}
@@ -99,7 +147,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 761.159973, 1169.0, 50.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 292.159973, 667.0, 50.0, 20.0 ]
+					"presentation_rect" : [ 351.411896, 488.417603, 50.0, 20.0 ]
 				}
 
 			}
@@ -116,7 +164,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 868.659973, 1169.0, 50.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 152.659973, 667.0, 50.0, 20.0 ]
+					"presentation_rect" : [ 211.911896, 488.417603, 50.0, 20.0 ]
 				}
 
 			}
@@ -211,7 +259,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 162.5, 1613.0, 312.0, 170.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 877.728577, 213.5, 312.0, 170.0 ]
+					"presentation_rect" : [ 979.487549, 156.299988, 274.512451, 84.642975 ]
 				}
 
 			}
@@ -226,7 +274,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 177.5, 1459.0, 297.0, 154.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 580.728577, 228.0, 297.0, 154.0 ]
+					"presentation_rect" : [ 979.487549, 232.5, 274.512451, 94.663055 ]
 				}
 
 			}
@@ -241,7 +289,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 183.0, 1103.0, 298.0, 152.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 580.728577, 389.304504, 298.0, 152.0 ]
+					"presentation_rect" : [ 979.487549, 327.163055, 274.512451, 87.579605 ]
 				}
 
 			}
@@ -256,7 +304,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 177.5, 1272.0, 309.0, 159.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 575.228577, 545.5, 309.0, 159.0 ]
+					"presentation_rect" : [ 979.487549, 414.130585, 274.512451, 98.287048 ]
 				}
 
 			}
@@ -284,7 +332,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1575.0, 923.0, 290.0, 141.0 ],
+					"patching_rect" : [ 1575.0, 923.0, 290.0, 144.0 ],
 					"text" : "GA Param settings\n1. Crossover rate 1-100 \n(This sets how fast you reach the solution by directed search)\n2. Mutation rate - 1-1000\n(This decides how much random genes mutate, its effects on speed can be positive or negative)\n3. Sparsity\nA control that sets only one value in a time step, so multiple notes don't play at the same step"
 				}
 
@@ -299,10 +347,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1892.0, 628.0, 56.0, 33.0 ],
+					"patching_rect" : [ 1892.0, 628.0, 56.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1149.112549, 490.5, 56.0, 33.0 ],
+					"presentation_rect" : [ 851.778687, 344.95285, 60.831528, 34.0 ],
 					"text" : "Toggle \nSparsity"
 				}
 
@@ -317,7 +365,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1892.0, 671.787048, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1218.25, 495.0, 20.0, 20.0 ]
+					"presentation_rect" : [ 920.916138, 349.45285, 26.442039, 26.442039 ]
 				}
 
 			}
@@ -332,7 +380,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 540.159973, 507.839996, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 449.063049, 615.0, 105.0, 20.0 ],
+					"presentation_rect" : [ 435.842041, 488.417603, 105.0, 20.0 ],
 					"text" : "Clear Sequencer"
 				}
 
@@ -360,7 +408,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 600.419861, 544.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 423.419861, 615.0, 20.0, 20.0 ]
+					"presentation_rect" : [ 410.198853, 488.417603, 20.0, 20.0 ]
 				}
 
 			}
@@ -416,10 +464,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1805.25, 635.0, 67.0, 33.0 ],
+					"patching_rect" : [ 1805.25, 635.0, 67.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1188.25, 424.0, 67.0, 33.0 ],
+					"presentation_rect" : [ 890.916138, 278.45285, 71.831528, 34.0 ],
 					"text" : "Mutation Rate"
 				}
 
@@ -434,10 +482,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1710.0, 635.0, 67.0, 33.0 ],
+					"patching_rect" : [ 1710.0, 635.0, 67.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1092.862549, 424.0, 67.0, 33.0 ],
+					"presentation_rect" : [ 795.528687, 278.45285, 71.831528, 34.0 ],
 					"text" : "Crossover Rate"
 				}
 
@@ -470,7 +518,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1805.25, 671.787048, 50.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1188.25, 460.787048, 50.0, 20.0 ]
+					"presentation_rect" : [ 890.916138, 315.239899, 54.831528, 20.0 ]
 				}
 
 			}
@@ -502,7 +550,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1716.25, 671.787048, 50.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1099.112549, 460.787048, 50.0, 20.0 ]
+					"presentation_rect" : [ 801.778687, 315.239899, 54.831528, 20.0 ]
 				}
 
 			}
@@ -517,7 +565,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1567.0, 848.0, 131.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 909.112488, 446.5, 149.0, 20.0 ],
+					"presentation_rect" : [ 611.778687, 300.95285, 153.831528, 20.0 ],
 					"text" : "Current GA Target ID"
 				}
 
@@ -531,9 +579,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1579.0, 507.839996, 195.0, 24.0 ],
+					"patching_rect" : [ 1579.0, 507.839996, 195.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1041.112549, 389.304504, 174.0, 24.0 ],
+					"presentation_rect" : [ 743.778687, 243.757355, 178.831528, 25.0 ],
 					"text" : "GA Rhythm Generator"
 				}
 
@@ -547,7 +595,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1520.0, 534.5, 46.0, 46.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 931.084473, 389.304504, 46.0, 46.0 ]
+					"presentation_rect" : [ 633.75061, 243.757355, 52.442039, 52.442039 ]
 				}
 
 			}
@@ -563,7 +611,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1665.25, 828.0, 50.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 919.084473, 467.0, 50.0, 20.0 ]
+					"presentation_rect" : [ 621.75061, 321.45285, 54.831528, 20.0 ]
 				}
 
 			}
@@ -576,9 +624,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1191.75, 851.0, 213.0, 24.0 ],
+					"patching_rect" : [ 1191.75, 851.0, 213.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 909.112488, 495.0, 208.0, 24.0 ],
+					"presentation_rect" : [ 611.778687, 349.45285, 212.831528, 25.0 ],
 					"text" : "Current GA Pattern Preview"
 				}
 
@@ -594,7 +642,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1196.0, 888.170044, 306.0, 106.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 909.112488, 534.5, 306.0, 106.0 ]
+					"presentation_rect" : [ 611.778687, 388.95285, 310.831543, 112.442039 ]
 				}
 
 			}
@@ -608,7 +656,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1046.02002, 919.170044, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 900.224976, 382.5, 365.775024, 258.0 ]
+					"presentation_rect" : [ 602.891113, 236.95285, 370.606567, 264.442047 ]
 				}
 
 			}
@@ -678,7 +726,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1274.0, 1023.0, 299.0, 60.0 ],
+					"patching_rect" : [ 1274.0, 1023.0, 299.0, 62.0 ],
 					"text" : "How GA works?\n1) set target as solution from the other users\n2) set source\n3) hit the bang to evolve and generate one pattern\n"
 				}
 
@@ -862,7 +910,7 @@
 					"outlettype" : [ "bang", "bang", "bang", "" ],
 					"patching_rect" : [ 359.659973, 621.258972, 528.0, 258.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 33.394043, 382.5, 528.0, 258.0 ]
+					"presentation_rect" : [ 74.891113, 225.74115, 528.0, 258.0 ]
 				}
 
 			}
@@ -877,7 +925,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1613.0, 327.723022, 292.0, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 965.0, 120.0, 301.0, 101.299988 ]
+					"presentation_rect" : [ 959.0, 55.0, 301.0, 101.299988 ]
 				}
 
 			}
@@ -892,7 +940,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1313.0, 327.723022, 287.5, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 651.0, 120.0, 301.0, 101.299988 ]
+					"presentation_rect" : [ 639.0, 55.0, 301.0, 101.299988 ]
 				}
 
 			}
@@ -907,7 +955,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1013.97998, 327.723022, 288.0, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 332.0, 120.0, 301.0, 101.299988 ]
+					"presentation_rect" : [ 321.0, 55.0, 301.0, 101.299988 ]
 				}
 
 			}
@@ -922,7 +970,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 710.0, 327.723022, 290.97998, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 120.0, 301.0, 101.299988 ]
+					"presentation_rect" : [ -3.0, 55.0, 301.0, 101.299988 ]
 				}
 
 			}
@@ -937,7 +985,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1613.0, 208.850006, 292.0, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 965.0, 9.126984, 301.0, 101.299988 ]
+					"presentation_rect" : [ 959.0, -55.873016, 301.0, 101.299988 ]
 				}
 
 			}
@@ -952,7 +1000,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1309.5, 208.850006, 291.0, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 651.0, 9.126984, 301.0, 101.299988 ]
+					"presentation_rect" : [ 639.0, -55.873016, 301.0, 101.299988 ]
 				}
 
 			}
@@ -967,7 +1015,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1013.97998, 208.850006, 288.0, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 332.0, 9.126984, 301.0, 101.299988 ]
+					"presentation_rect" : [ 321.0, -55.873016, 301.0, 101.299988 ]
 				}
 
 			}
@@ -982,7 +1030,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 710.0, 208.850006, 290.97998, 96.299988 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 9.126984, 301.0, 101.299988 ]
+					"presentation_rect" : [ -3.0, -55.873016, 301.0, 101.299988 ]
 				}
 
 			}
@@ -1011,9 +1059,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 243.019989, 146.72699, 128.0, 33.0 ],
+					"patching_rect" : [ 243.019989, 146.72699, 128.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.394043, 297.5, 130.605957, 33.0 ],
+					"presentation_rect" : [ 344.0, 181.621475, 130.605957, 34.0 ],
 					"varname" : "umenu"
 				}
 
@@ -1028,10 +1076,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 243.019989, 94.0, 103.0, 60.0 ],
+					"patching_rect" : [ 243.019989, 94.0, 103.0, 62.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.394043, 259.0, 121.0, 33.0 ],
-					"text" : "Username"
+					"presentation_rect" : [ 207.0, 181.621475, 129.052551, 34.0 ],
+					"text" : "Username:"
 				}
 
 			}
@@ -1045,7 +1093,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.538021, 30.719997, 158.0, 74.0 ],
+					"patching_rect" : [ 33.538021, 30.719997, 158.0, 75.0 ],
 					"text" : "Inlets:\n1. Send Serial Data (Bang)\n2. Serial Data Input\nOutlets:\n1. Serial Data Output"
 				}
 
@@ -1060,7 +1108,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.538021, 285.627014, 158.0, 114.0 ],
+					"patching_rect" : [ 33.538021, 285.627014, 158.0, 117.0 ],
 					"text" : "Inlets:\n1. Trigger Bang\n2. Note Number\n3. Duration (ms)\n4. MIDI Program Num\n5. Volume (0-127)\nOutlets:\n1. Synthesized  Audio"
 				}
 
@@ -1075,7 +1123,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 33.538021, 123.126984, 158.0, 154.0 ],
+					"patching_rect" : [ 33.538021, 123.126984, 158.0, 158.0 ],
 					"text" : "Inlets:\n1. Start/Stop (1/0)\n2. Tempo (Int)\n3. Send Serial Data (Bang)\n4. Serial Data Input\n5. User ID\nOutlets:\n1. Row 1 Bang\n2. Row 2 Bang\n3. Row 3 Bang\n4. Serial Data Output"
 				}
 
@@ -1102,7 +1150,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 359.659973, 571.839966, 20.0, 20.0 ]
+					"patching_rect" : [ 359.659973, 571.839966, 32.884079, 32.884079 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 140.83075, 176.621475, 44.157646, 44.157646 ]
 				}
 
 			}
@@ -1182,7 +1232,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 337.284576, 959.627319, 186.0, 89.287109 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 374.063049, 293.5, 187.331009, 75.0 ]
+					"presentation_rect" : [ -6.14624, 225.74115, 81.037354, 294.03244 ]
 				}
 
 			}
@@ -1195,7 +1245,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 403.019989, 51.72699, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -2.690552, -3.945496, 1288.669067, 707.890991 ]
+					"presentation_rect" : [ -16.105093, -66.755356, 1293.500488, 608.039368 ]
 				}
 
 			}
@@ -1342,6 +1392,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1407,16 +1466,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 369.159973, 591.0, 369.159973, 591.0 ],
 					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 369.159973, 555.0, 369.159973, 555.0 ],
-					"source" : [ "obj-34", 0 ]
 				}
 
 			}
@@ -1771,6 +1820,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-87", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-58", 0 ]
@@ -2364,70 +2422,70 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "oneShotSampler.maxpat",
-				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/B-rad/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sequencerViewerObjectCopy.maxpat",
-				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/B-rad/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sequencerObjectCopy.maxpat",
-				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/B-rad/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "GAPreviewerObject.maxpat",
-				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/B-rad/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "reverbObject.maxpat",
-				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/B-rad/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "yafr2.maxpat",
-				"bootpath" : "/Applications/Max 6.1/examples/effects/reverb/lib",
-				"patcherrelativepath" : "../../../../../../Applications/Max 6.1/examples/effects/reverb/lib",
+				"bootpath" : "/PROGRA~2/CYCLIN~1/MAX6~1.1/examples/effects/reverb/lib",
+				"patcherrelativepath" : "../../../../../../../PROGRA~2/CYCLIN~1/MAX6~1.1/examples/effects/reverb/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "flangingObject.maxpat",
-				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/B-rad/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "lowpassObject.maxpat",
-				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/B-rad/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "delayObject.maxpat",
-				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/B-rad/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scoreDisplayObject.maxpat",
-				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/B-rad/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

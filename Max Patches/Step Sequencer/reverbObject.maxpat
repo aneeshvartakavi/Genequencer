@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 540.0, 92.0, 887.0, 816.0 ],
+		"rect" : [ 385.0, 92.0, 887.0, 816.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -51,10 +51,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 574.0, 198.0, 80.0, 47.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 236.0, 8.75, 58.0, 47.0 ],
+					"patching_rect" : [ 574.0, 198.0, 80.0, 48.0 ],
 					"text" : "presets:\n1) zeros\n2) middle "
 				}
 
@@ -70,7 +67,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 82.0, 153.0, 62.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.0, 79.0, 59.0, 20.0 ],
+					"presentation_rect" : [ 44.0, 40.5, 59.0, 20.0 ],
 					"text" : "activate"
 				}
 
@@ -86,7 +83,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 467.0, 126.0, 100.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.0, 8.75, 100.0, 29.0 ],
+					"presentation_rect" : [ 3.0, 2.75, 100.0, 29.0 ],
 					"text" : "Reverb"
 				}
 
@@ -113,8 +110,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 467.0, 198.0, 100.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 136.0, 8.75, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
 							"data" : [ 5, "obj-15", "slider", "float", 0.0, 5, "obj-23", "slider", "float", 0.0, 5, "obj-24", "slider", "float", 0.0, 5, "obj-25", "slider", "float", 0.0, 5, "obj-16", "toggle", "int", 1, 5, "obj-19", "toggle", "int", 0 ]
@@ -661,9 +656,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 467.0, 276.0, 65.0, 19.0 ],
+					"patching_rect" : [ 467.0, 276.0, 65.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 136.0, 78.0, 65.0, 19.0 ],
+					"presentation_rect" : [ 118.0, 20.75, 65.0, 20.0 ],
 					"text" : "decay time"
 				}
 
@@ -677,9 +672,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 467.0, 323.0, 53.0, 19.0 ],
+					"patching_rect" : [ 467.0, 323.0, 53.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 136.0, 125.0, 53.0, 19.0 ],
+					"presentation_rect" : [ 118.0, 57.75, 53.0, 20.0 ],
 					"text" : "diffusion"
 				}
 
@@ -693,9 +688,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 467.0, 299.0, 132.0, 19.0 ],
+					"patching_rect" : [ 467.0, 299.0, 132.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 136.0, 101.0, 132.0, 19.0 ],
+					"presentation_rect" : [ 118.0, 38.75, 132.0, 20.0 ],
 					"text" : "high frequency damping"
 				}
 
@@ -709,9 +704,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 467.0, 253.0, 67.0, 19.0 ],
+					"patching_rect" : [ 467.0, 253.0, 67.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 136.0, 55.0, 67.0, 19.0 ],
+					"presentation_rect" : [ 118.0, 2.75, 67.0, 20.0 ],
 					"text" : "size"
 				}
 
@@ -728,7 +723,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 467.0, 300.0, 142.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 132.0, 102.0, 142.0, 19.0 ]
+					"presentation_rect" : [ 114.0, 39.75, 142.0, 19.0 ]
 				}
 
 			}
@@ -744,7 +739,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 467.0, 277.0, 142.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 132.0, 79.0, 142.0, 19.0 ]
+					"presentation_rect" : [ 114.0, 21.75, 142.0, 19.0 ]
 				}
 
 			}
@@ -760,7 +755,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 467.0, 254.0, 142.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 132.0, 56.0, 142.0, 19.0 ]
+					"presentation_rect" : [ 114.0, 3.75, 142.0, 19.0 ]
 				}
 
 			}
@@ -776,7 +771,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 467.0, 323.0, 142.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 132.0, 125.0, 142.0, 19.0 ]
+					"presentation_rect" : [ 114.0, 57.75, 142.0, 19.0 ]
 				}
 
 			}
@@ -832,7 +827,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 48.0, 146.0, 34.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.0, 107.0, 37.0, 37.0 ]
+					"presentation_rect" : [ 3.0, 32.0, 37.0, 37.0 ]
 				}
 
 			}
@@ -899,7 +894,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 467.0, 369.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 1.75, 290.0, 149.25 ]
+					"presentation_rect" : [ -6.0, -6.875, 608.0, 231.875 ]
 				}
 
 			}
@@ -1189,8 +1184,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "yafr2.maxpat",
-				"bootpath" : "/Applications/Max 6.1/examples/effects/reverb/lib",
-				"patcherrelativepath" : "../../../../../../../Applications/Max 6.1/examples/effects/reverb/lib",
+				"bootpath" : "/PROGRA~2/CYCLIN~1/MAX6~1.1/examples/effects/reverb/lib",
+				"patcherrelativepath" : "../../../../../../../PROGRA~2/CYCLIN~1/MAX6~1.1/examples/effects/reverb/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
