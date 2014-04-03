@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 3,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1321.0, 850.0 ],
+		"rect" : [ 0.0, 42.0, 1920.0, 952.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -31,13 +31,66 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-35",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 512.0, 405.0, 150.0, 20.0 ],
+					"text" : "Output IP Address!"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 591.0, 440.0, 155.0, 18.0 ],
+					"text" : "192.168.0.100"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 622.0, 321.0, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 622.0, 370.0, 198.0, 20.0 ],
+					"text" : "mxj messageProcessing.IpAddress"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-33",
 					"linecount" : 9,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 658.0, 696.0, 50.0, 125.0 ],
+					"patching_rect" : [ 658.0, 696.0, 50.0, 129.0 ],
 					"text" : "0 1 \"[0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\""
 				}
 
@@ -516,7 +569,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 118.666672, 395.0, 155.0, 60.0 ],
+					"patching_rect" : [ 118.666672, 395.0, 155.0, 62.0 ],
 					"text" : "Encoded message format \n1) User ID\n2) Encoder Quantization\n3) Sequencer State"
 				}
 
@@ -531,7 +584,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 275.5, 562.0, 198.0, 87.0 ],
+					"patching_rect" : [ 275.5, 562.0, 198.0, 89.0 ],
 					"text" : "Route - Just sends the incoming message to the corresponding output (0-7), left to right.\n\nreplace the bang object by a decode if needed."
 				}
 
@@ -546,7 +599,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 35.0, 17.0, 172.0, 60.0 ],
+					"patching_rect" : [ 35.0, 17.0, 172.0, 62.0 ],
 					"text" : "Aneesh Vartakavi\n\nMouse over inlet/outlet of objects to see description"
 				}
 
@@ -752,7 +805,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-4",
 					"maxclass" : "newobj",
-					"numinlets" : 5,
+					"numinlets" : 6,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1339.0, 217.0, 169.0, 20.0 ],
@@ -770,7 +823,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1372.833252, 556.0, 178.0, 100.0 ],
+					"patching_rect" : [ 1372.833252, 556.0, 178.0, 103.0 ],
 					"text" : "DecodeSequencer - Send a message to decode immediately, or bang to decode the stored output.\n\nIt sends a message directly to the sequencer grid"
 				}
 
@@ -865,7 +918,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 244.25, 141.0, 91.25, 47.0 ],
+					"patching_rect" : [ 244.25, 141.0, 91.25, 48.0 ],
 					"text" : "Sequencer State messages"
 				}
 
@@ -880,7 +933,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 108.0, 79.0, 47.0 ],
+					"patching_rect" : [ 135.0, 108.0, 79.0, 48.0 ],
 					"text" : "Bang to create message"
 				}
 
@@ -895,7 +948,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 428.5, 202.0, 58.0, 33.0 ],
+					"patching_rect" : [ 428.5, 202.0, 58.0, 34.0 ],
 					"text" : "User ID\n(0-7)"
 				}
 
@@ -924,7 +977,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 99.666672, 346.0, 196.0, 31.0 ],
+					"patching_rect" : [ 99.666672, 346.0, 196.0, 32.0 ],
 					"text" : "0 1 \"[0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\""
 				}
 
@@ -1112,6 +1165,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1127,6 +1189,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 196.5, 258.0, 280.5, 258.0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -1185,7 +1256,7 @@
 					"destination" : [ "obj-4", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1386.0, 186.0, 1386.0, 186.0 ],
+					"midpoints" : [ 1386.0, 186.0, 1378.5, 186.0 ],
 					"source" : [ "obj-42", 0 ]
 				}
 
