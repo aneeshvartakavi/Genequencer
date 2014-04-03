@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 3,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 386.0, 123.0, 366.0, 237.0 ],
+		"rect" : [ 968.0, 50.0, 944.0, 936.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -31,6 +31,76 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-21",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 480.0, 499.0, 150.0, 20.0 ],
+					"text" : "User ID , IP"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-19",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 297.0, 531.0, 193.0, 18.0 ],
+					"text" : "0 192.168.0.100"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 318.0, 465.0, 68.0, 20.0 ],
+					"text" : "route pong"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 527.0, 374.0, 33.0, 18.0 ],
+					"text" : "ping"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 171.0, 300.0, 70.0, 18.0 ],
+					"text" : "ctrl start $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-12",
 					"linecount" : 2,
 					"maxclass" : "message",
@@ -50,7 +120,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.5, 474.969971, 167.0, 20.0 ],
+					"patching_rect" : [ 20.5, 536.969971, 167.0, 20.0 ],
 					"text" : "udpsend 128.61.20.214 7100"
 				}
 
@@ -63,7 +133,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.5, 454.969971, 167.0, 20.0 ],
+					"patching_rect" : [ 20.5, 516.969971, 167.0, 20.0 ],
 					"text" : "udpsend 128.61.20.214 7100"
 				}
 
@@ -76,7 +146,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.5, 434.969971, 167.0, 20.0 ],
+					"patching_rect" : [ 20.5, 496.969971, 167.0, 20.0 ],
 					"text" : "udpsend 128.61.20.214 7100"
 				}
 
@@ -89,7 +159,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.5, 414.969971, 167.0, 20.0 ],
+					"patching_rect" : [ 20.5, 476.969971, 167.0, 20.0 ],
 					"text" : "udpsend 128.61.20.214 7100"
 				}
 
@@ -102,8 +172,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.5, 394.969971, 167.0, 20.0 ],
-					"text" : "udpsend 128.61.20.214 7100"
+					"patching_rect" : [ 20.5, 456.969971, 139.0, 20.0 ],
+					"text" : "udpsend 10.0.1.11 7400"
 				}
 
 			}
@@ -115,8 +185,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.5, 374.969971, 167.0, 20.0 ],
-					"text" : "udpsend 128.61.20.214 7100"
+					"patching_rect" : [ 20.5, 414.969971, 140.0, 20.0 ],
+					"text" : "udpsend 10.0.1.25 7400"
 				}
 
 			}
@@ -197,7 +267,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 136.5, 287.410034, 80.0, 18.0 ],
+					"patching_rect" : [ 234.5, 287.410034, 80.0, 18.0 ],
 					"text" : "ctrl tempo $1"
 				}
 
@@ -219,10 +289,46 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -300,6 +406,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -364,7 +479,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "conductorControlObject.maxpat",
-				"bootpath" : "/Users/B-rad/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

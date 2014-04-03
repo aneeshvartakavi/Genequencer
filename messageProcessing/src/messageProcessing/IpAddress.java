@@ -4,18 +4,21 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 
+import java.util.Arrays;
+
+import com.cycling74.max.Atom;
 //import com.cycling74.max.DataTypes;
 import com.cycling74.max.MaxObject;
 
 public class IpAddress extends MaxObject {
 	
-	private String IP;
+	private int userID = -1;
 	
 	public IpAddress()
 	{
-		declareIO(1,1);
+		declareIO(2,1);
 		
-		setInletAssist(new String[] { "Bang to output IP address"});
+		setInletAssist(new String[] { "Bang to output IP address","Current UserID"});
 		setOutletAssist(new String[] { "Ouput IP address"});
 		
 		createInfoOutlet(false);
@@ -28,13 +31,22 @@ public class IpAddress extends MaxObject {
 		sendToOutlet();
 	}
 	
+	public void inlet(int inletVal)
+	{
+		if(getInlet()==1)
+		{
+			userID = inletVal;
+		}
+	}
+	
 	private void sendToOutlet()
 	{
 		try
 		{
+			Atom[] outputMessage = { Atom.newAtom("pong"),Atom.newAtom(userID), Atom.newAtom(InetAddress.getLocalHost().getHostAddress())};
+			outlet(0,outputMessage);
 			
-			IP=InetAddress.getLocalHost().getHostAddress();
-			outlet(0,IP);
+			//outlet(0,InetAddress.getLocalHost().getHostAddress());
 		}
 		catch(UnknownHostException e)
 		{
