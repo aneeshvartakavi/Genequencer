@@ -29,6 +29,42 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 24.0,
+					"id" : "obj-17",
+					"items" : [ "Euphonium", ",", "Trumpet", ",", "Tenor", "Sax", ",", "Default", "Instrument" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 95.019989, 106.72699, 128.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 164.105103, 50.376816, 255.605957, 33.0 ],
+					"types" : [ "Euph", "Trum", "Teno", "Sax ", "Defa", "Inst" ],
+					"varname" : "umenu[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 24.0,
+					"frgb" : 0.0,
+					"id" : "obj-47",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 12.019989, 214.22699, 103.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 50.376816, 129.052551, 33.0 ],
+					"text" : "Instrument:"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -189,23 +225,6 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 24.0,
-					"frgb" : 0.0,
-					"id" : "obj-47",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 13.019989, 214.22699, 103.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 50.376816, 129.052551, 33.0 ],
-					"text" : "Username:"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-8",
 					"maxclass" : "newobj",
@@ -255,7 +274,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 175.0, 383.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 156.105103, 100.376831, 319.0, 33.0 ]
+					"presentation_rect" : [ 157.105103, 100.376831, 319.0, 33.0 ]
 				}
 
 			}
@@ -294,28 +313,9 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 685.02002, 95.826965, 128.0, 128.0 ],
+					"patching_rect" : [ 1054.02002, 304.826965, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 570.500488, 200.039368 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 24.0,
-					"id" : "obj-54",
-					"items" : [ "Euphonium", ",", "Trumpet", ",", "Tenor", "Sax", ",", "Default", "Instrument" ],
-					"maxclass" : "umenu",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 95.019989, 106.72699, 128.0, 33.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 164.105103, 50.376816, 254.605957, 33.0 ],
-					"varname" : "umenu"
+					"presentation_rect" : [ 0.0, 0.0, 564.105103, 234.0 ]
 				}
 
 			}
@@ -326,6 +326,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -421,19 +430,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-54", 0 ]
 				}
 
 			}
