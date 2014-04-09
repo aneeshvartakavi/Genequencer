@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 8.0, 50.0, 1891.0, 1012.0 ],
+		"rect" : [ 69.0, 293.0, 1891.0, 1012.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,99 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-92",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 561.0, 129.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 696.0, 108.0, 32.0, 20.0 ],
+					"text" : "Sec"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-91",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 546.0, 114.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 630.799988, 108.0, 32.0, 20.0 ],
+					"text" : "Min"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-83",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 954.799988, 553.0, 115.200012, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 637.200012, 40.369019, 115.200012, 20.0 ],
+					"text" : "Time Elapsed"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-10",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1020.0, 519.0, 50.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 696.0, 77.369019, 50.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-14",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 954.799988, 519.0, 50.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 630.799988, 77.369019, 50.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.152941, 0.411765, 0.862745, 1.0 ],
+					"id" : "obj-88",
+					"maxclass" : "panel",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 637.0, 214.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 624.400024, 65.5, 128.0, 71.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -1672,7 +1765,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "conductorControlObject.maxpat",
-				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project_Studio_Group_E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
