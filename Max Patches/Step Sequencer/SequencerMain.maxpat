@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 42.0, 1920.0, 952.0 ],
+		"rect" : [ -8.0, 50.0, 1920.0, 952.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -212,7 +212,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 212.587311, 562.067932, 99.0, 20.0 ],
-					"text" : "udpreceive 7400"
+					"text" : "udpreceive 7342"
 				}
 
 			}
@@ -1325,7 +1325,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 359.659973, 571.839966, 32.884079, 32.884079 ],
+					"patching_rect" : [ 359.659973, 571.839966, 20.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 168.83075, 212.621475, 44.157646, 44.157646 ]
 				}
