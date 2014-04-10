@@ -4,7 +4,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 import com.cycling74.max.Atom;
 //import com.cycling74.max.DataTypes;
