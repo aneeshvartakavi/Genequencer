@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 396.0, 410.0, 1338.0, 601.0 ],
+		"rect" : [ 386.0, 194.0, 1338.0, 601.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -126,7 +126,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 537.0, 133.22699, 99.0, 20.0 ],
-					"text" : "udpreceive 7400"
+					"text" : "udpreceive 7432"
 				}
 
 			}
