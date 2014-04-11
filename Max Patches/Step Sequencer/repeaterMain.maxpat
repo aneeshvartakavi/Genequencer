@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 3,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 390.0, 78.0, 520.0, 183.0 ],
+		"rect" : [ 379.0, 71.0, 520.0, 183.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -31,13 +31,45 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-92",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 118.0, 428.0, 33.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 399.0, 146.70816, 33.0, 18.0 ],
+					"text" : "plug"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-90",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 87.0, 460.0, 37.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 439.884827, 146.70816, 37.0, 18.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-89",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 192.0, 146.0, 150.0, 34.0 ],
+					"patching_rect" : [ 192.0, 146.0, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 142.0, 146.70816, 244.0, 20.0 ],
 					"text" : "<<----------Change to your desired Vst here"
@@ -1393,7 +1425,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 396.244812, 596.483887, 26.5, 32.0 ],
+					"patching_rect" : [ 396.244812, 596.483887, 26.5, 31.0 ],
 					"text" : "200"
 				}
 
@@ -1422,7 +1454,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 327.744812, 596.483887, 32.5, 18.0 ],
-					"text" : "53"
+					"text" : "72"
 				}
 
 			}
@@ -1873,9 +1905,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 670.363708, 280.807495, 149.851196, 34.0 ],
+					"patching_rect" : [ 670.363708, 280.807495, 149.851196, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.88549, 56.955688, 141.886169, 34.0 ],
+					"presentation_rect" : [ 12.88549, 56.955688, 141.886169, 33.0 ],
 					"text" : "Instructions:"
 				}
 
@@ -1999,9 +2031,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 167.187302, 63.273293, 128.0, 34.0 ],
+					"patching_rect" : [ 167.187302, 63.273293, 128.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 176.209061, 14.438217, 300.675781, 34.0 ],
+					"presentation_rect" : [ 176.209061, 14.438217, 300.675781, 33.0 ],
 					"varname" : "umenu"
 				}
 
@@ -2015,9 +2047,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.777309, 43.416885, 143.994797, 34.0 ],
+					"patching_rect" : [ 20.777309, 43.416885, 143.994797, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.88549, 14.438217, 129.052551, 34.0 ],
+					"presentation_rect" : [ 12.88549, 14.438217, 129.052551, 33.0 ],
 					"text" : "Username:"
 				}
 
@@ -3745,6 +3777,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-92", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-124", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3872,7 +3922,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "scoreDisplayObject.maxpat",
-				"bootpath" : "/Users/B-rad/Desktop/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Shin/Downloads/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
