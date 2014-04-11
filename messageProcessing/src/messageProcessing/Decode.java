@@ -39,8 +39,14 @@ public class Decode extends MaxObject{
 	{
 		if(args.length==3)
 		{
-			userID = args[0].getInt();
-			quantizationState = args[1].getInt();
+			if(args[0].getInt()!=-1)
+			{
+				userID = args[0].getInt();
+			}
+			if(args[1].getInt()!=-1)
+			{
+				quantizationState = args[1].getInt();
+			}
 			
 			String seqState = args[2].getString();
 			
