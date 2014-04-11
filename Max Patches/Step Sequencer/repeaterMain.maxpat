@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 3,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 390.0, 78.0, 520.0, 183.0 ],
+		"rect" : [ 968.0, 50.0, 944.0, 936.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,63 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 396.244812, 123.159203, 198.0, 20.0 ],
+					"text" : "mxj messageProcessing.IpAddress"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-91",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 396.244812, 90.576088, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-92",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 118.0, 428.0, 33.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 399.0, 146.70816, 33.0, 18.0 ],
+					"text" : "plug"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-90",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 87.0, 460.0, 37.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 439.884827, 146.70816, 37.0, 18.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -1422,7 +1479,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 327.744812, 596.483887, 32.5, 18.0 ],
-					"text" : "53"
+					"text" : "45"
 				}
 
 			}
@@ -1980,11 +2037,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-41",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 236.675583, 190.645233, 103.0, 20.0 ],
-					"text" : "route ctrl seq cue"
+					"numinlets" : 5,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 236.675583, 190.645233, 129.0, 20.0 ],
+					"text" : "route ctrl seq cue ping"
 				}
 
 			}
@@ -2085,7 +2142,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 424.981506, 47.334694, 128.0, 128.0 ],
+					"patching_rect" : [ 639.003418, 43.416885, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.556152, 5.203209, 509.155884, 172.504959 ]
 				}
@@ -2994,6 +3051,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3294,8 +3360,17 @@
 					"destination" : [ "obj-8", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 302.175598, 251.115204, 499.122284, 251.115204 ],
+					"midpoints" : [ 301.175598, 251.115204, 499.122284, 251.115204 ],
 					"source" : [ "obj-41", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-91", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-41", 3 ]
 				}
 
 			}
@@ -3745,6 +3820,34 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 405.744812, 110.159203, 405.744812, 110.159203 ],
+					"source" : [ "obj-91", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-92", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-124", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3872,7 +3975,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "scoreDisplayObject.maxpat",
-				"bootpath" : "/Users/B-rad/Desktop/Project-Studio-Group-E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project_Studio_Group_E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
