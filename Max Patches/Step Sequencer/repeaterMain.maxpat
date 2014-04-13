@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 968.0, 50.0, 944.0, 936.0 ],
+		"rect" : [ 8.0, 50.0, 524.0, 186.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,20 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-100",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 525.0, 233.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 525.0, 233.0, 100.0, 20.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -643,7 +657,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1171.638916, 824.575317, 50.0, 18.0 ],
-					"text" : "4"
+					"text" : "1"
 				}
 
 			}
@@ -804,8 +818,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 886.244507, 744.049927, 41.0, 18.0 ],
-					"text" : "0 100"
+					"patching_rect" : [ 886.244507, 744.049927, 47.0, 18.0 ],
+					"text" : "0 1000"
 				}
 
 			}
@@ -818,8 +832,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 843.785645, 746.978149, 41.0, 18.0 ],
-					"text" : "1 100"
+					"patching_rect" : [ 843.785645, 746.978149, 47.0, 18.0 ],
+					"text" : "1 1000"
 				}
 
 			}
@@ -3975,7 +3989,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "scoreDisplayObject.maxpat",
-				"bootpath" : "/Users/Aneesh/Documents/GitHub/Project_Studio_Group_E/Max Patches/Step Sequencer",
+				"bootpath" : "/Users/B-rad/Documents/GitHub/Project-Studio-Group-E/Max Patches/Step Sequencer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
